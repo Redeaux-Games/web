@@ -5,6 +5,16 @@ Redeaux Games
 </title>
 </head>
 <body>
-Test
+<center>
+<script>
+var xmlhttp;
+if (window.XMLHttpRequest)
+{
+  xmlhttp = new XMLHttpRequest();
+}
+xmlhttp.open("GET",https://redeaux.games/members/redeaux-games/,true);
+xmlhttp.send();
+  
+document.getElementById("content-section").innerHTML = xmlhttp.responseText;
 </body>
 </html>
